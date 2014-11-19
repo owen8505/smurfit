@@ -3,42 +3,81 @@
 @import url(main.css);
 @import url(icomoon.css);
 body {
-  background: linear-gradient(to bottom, #bdccd4 0%, white 100%);
   font-family: 'Helvetica'; }
 
-/*
- Header Section
-*/
-.logo {
-  margin: 1.5em 0; }
+.container {
+  background: linear-gradient(to bottom, #bdccd4 0%, white 100%); }
 
-/*
-  Main Section
-*/
-nav ul.tab-nav {
-  background-color: #7db8d9;
-  border-radius: 10px 10px 0px 0px;
-  font-size: 0;
-  list-style: none;
-  margin: 0px;
-  overflow: hidden;
+.logo {
+  margin: 1em 0; }
+
+.main-section {
+  box-sizing: border-box;
   padding: 0px; }
-  nav ul.tab-nav a {
-    color: white;
-    display: inline-block;
-    font-size: 16px;
-    padding: 1.2em 0.5em 1em;
-    text-decoration: none;
-    width: 100%; }
-  nav ul.tab-nav a.selected {
+  .main-section nav ul.tab-nav {
+    font-size: 0;
+    list-style: none;
+    margin: 0px;
+    padding: 0px; }
+    .main-section nav ul.tab-nav li {
+      background-color: #7db8d9;
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      width: 16.66%; }
+      .main-section nav ul.tab-nav li a {
+        color: white;
+        display: inline-block;
+        font-size: 16px;
+        padding: 1.2em 0.5em 1em;
+        text-decoration: none;
+        width: 100%; }
+    .main-section nav ul.tab-nav li.selected {
+      background-color: white;
+      box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.5); }
+      .main-section nav ul.tab-nav li.selected a {
+        color: #666666; }
+    .main-section nav ul.tab-nav li.selected:hover {
+      background-color: white; }
+    .main-section nav ul.tab-nav li:hover {
+      background-color: #bdccd4; }
+    .main-section nav ul.tab-nav li:first-child {
+      border-radius: 10px 0px 0px 0px; }
+    .main-section nav ul.tab-nav li:last-child {
+      border-radius: 0px 10px 0px 0px; }
+    .main-section nav ul.tab-nav .icon {
+      display: block;
+      font-size: 30px;
+      margin-bottom: 0.2em; }
+  .main-section .main-container .main-content {
     background-color: white;
-    color: #666666; }
-  nav ul.tab-nav li {
-    display: inline-block;
-    text-align: center;
-    vertical-align: top;
-    width: 16.5%; }
-  nav ul.tab-nav .icon {
-    display: block;
-    font-size: 34px;
-    margin-bottom: 0.2em; }
+    box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.5);
+    padding: 2em;
+    height: 100%; }
+    .main-section .main-container .main-content .content {
+      padding: 6em 1em;
+      text-align: center; }
+  .main-section .sub-nav {
+    font-size: 0px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px; }
+    .main-section .sub-nav li {
+      background-color: #dddedf;
+      border-radius: 10px 10px 0px 0px;
+      display: inline-block;
+      font-size: 16px;
+      text-align: center;
+      vertical-align: top;
+      width: 16.66%; }
+      .main-section .sub-nav li a {
+        color: #666666;
+        display: inline-block;
+        font-size: 16px;
+        padding: 1em 0.5em 0.8em;
+        text-decoration: none;
+        width: 100%; }
+    .main-section .sub-nav li.selected {
+      background-color: #cccccc; }
+      .main-section .sub-nav li.selected a {
+        color: #666666; }
